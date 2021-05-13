@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/robin/.ncmpcpp/ncmpcpp/ncmpcpp'
+let g:netrw_dirhist_6='/home/robin/.ncmpcpp/ncmpcpp'
+let g:netrw_dirhist_5='/home/robin/.ncmpcpp'
+let g:netrw_dirhist_4='/home/robin/.config/redshift/redshift'
+let g:netrw_dirhist_3='/home/robin/Git/profile/config/rofi/themes'
+let g:netrw_dirhist_2='/home/robin/.config'
+let g:netrw_dirhist_1='/home/robin/.config/i3'
+let g:netrw_dirhist_0='/home/robin/.config/polybar'
+let g:netrw_dirhist_9='/home/robin/Nextcloud'
+let g:netrw_dirhist_8='/home/robin'

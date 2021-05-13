@@ -1,0 +1,8 @@
+configuration {
+theme: "~/.config/rofi/themes/Green.rasi";
+modi: "run";
+combi-modi: "drun,run";
+location: 2;
+lines: 5;
+font: "Iosevka Medium Extended 10";
+}

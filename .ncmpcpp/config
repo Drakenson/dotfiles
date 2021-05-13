@@ -1,0 +1,66 @@
+####visualizer settings####
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "visualizer"
+visualizer_type = "spectrum"
+visualizer_color = "65"
+visualizer_look = "◆▋"
+
+####songs####
+song_list_format = "{$(250)%a %l %t}|{%a %t }"
+song_library_format = "$(65)%l $8%t$(end)"
+now_playing_prefix = "$b$(65)"
+now_playing_suffix = "$/b$(end)"
+song_columns_list_format = "(4)[]{} (20)[]{a} (30)[]{t} (30)[]{b} (5)[]{l}"
+
+alternative_header_first_line_format = "$b$(65) %n. %t $(end)$/b"
+alternative_header_second_line_format = "$(65) %a - %b (%y) $(end)"
+
+####misc####
+playlist_separate_albums = "no"
+playlist_display_mode = "columns" (classic/columns)
+browser_display_mode = "columns"
+volume_change_step = "2"
+progressbar_look = "─⊙─"
+
+message_delay_time = "2"
+playlist_disable_highlight_delay = "3"
+
+user_interface = "alternative"
+data_fetching_delay = "yes"
+media_library_primary_tag = "artist"
+default_find_mode = "wrapped"
+header_visibility = "no"
+statusbar_visibility = "yes"
+titles_visibility = "no"
+header_text_scrolling = "yes" 
+cyclic_scrolling = "yes"
+startup_screen = "media_library"
+ask_before_clearing_playlists = "no"
+clock_display_seconds = "yes"
+display_volume_level = "yes"
+display_bitrate = "no"
+display_remaining_time = "yes"
+ignore_leading_the = "no"
+mouse_support = "yes"
+#use_console_editor = "yes"
+autocenter_mode = "yes"
+
+playlist_show_remaining_time = "yes"
+
+
+####colors####
+discard_colors_if_item_is_selected = "yes"
+header_window_color = "65"
+volume_color = "65"
+state_line_color = "65"
+state_flags_color = "65"
+main_window_color = "white"
+color1 = "default"
+color2 = "default"
+current_item_prefix = "$(65)$r"
+current_item_suffix = "$/r$(end)"
+progressbar_color = "9"
+progressbar_elapsed_color = "65"
+statusbar_color = "65"
+current_item_inactive_column_prefix = "$(65)"
+current_item_inactive_column_suffix = "$(end)"

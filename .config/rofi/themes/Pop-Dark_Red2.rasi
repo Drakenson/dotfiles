@@ -1,0 +1,82 @@
+/**
+ * Author: Primetoxinz
+ */
+* {
+    itext-color:                 #f2f2f2;
+    border-color-cust:		 #bb3200;
+    color:			 #f2f2f2;
+    background-color:		 rgba(0,0,0,0%);
+    bg:		                 rgba(50,50,50,70%);
+    foreground: 	 	 #ffffff;	
+    highlight:			 #bb3200;
+    spacing:                     2;
+
+	
+}
+#window {
+    border:    2;
+    border-color: @border-color-cust;
+    text-color: @foreground;
+    padding:    15;
+    text-color: @border-color;
+    background-color: @bg;
+    y-offset: 75px;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+#message {
+    border:     0px dash 0px 0px ;
+    text-color: @separatorcolor;
+    padding:    2px 0px 0px ;
+}
+#textbox {
+    text-color: @foreground;
+}
+#listview {
+    fixed-height: 0;
+    border:       2px 0px 0px ;
+    padding:      2px 0px 0px ;
+    text-color: @separatorcolor;
+}
+#element {
+    border: 2;
+}
+#element.normal.normal {
+    text-color: @foreground;
+    background-color: @background;
+}
+#element.selected.normal {
+    text-color: @foreground;
+    background-color: @highlight;
+}
+#element.alternate.normal {
+    text-color: @foreground;
+    background-color: @background;
+}
+
+#mode-switcher {
+    border: 1px dash 0px 0px ;
+}
+#button selected {
+    text-color: @foreground;
+    background-color: @background;
+}
+#inputbar {
+    spacing: 0;
+    border: 0px ;
+}
+#button normal {
+    text-color: @foreground;
+}
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @foreground;
+}
