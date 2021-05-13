@@ -113,8 +113,14 @@ label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background-active}
 label-focused-padding = 2
 
+label-urgent = %index%
+label-urgent-padding = 2
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.background-inactive}
+
 label-visible = %index%
 label-visible-padding = 2
+label-visible-foreground = ${colors.foreground}
 label-visible-background = ${colors.background-middle}
 
 label-unfocused = %index%
@@ -157,6 +163,8 @@ bar-volume-fill-font = 2
 bar-volume-empty = 
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
+
+click-right = pavucontrol
 
 interval = 2
 
