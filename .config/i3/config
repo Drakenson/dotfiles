@@ -257,7 +257,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 
 #Feh
-exec_always --no-startup-id sleep 3 && feh --bg-fill /home/robin/Bilder/Wallpaper/green1.jpg --bg-fill /home/robin/Bilder/Wallpaper/megumin.jpg
+exec_always --no-startup-id sleep 3 && feh --bg-fill /home/robin/Bilder/Wallpaper/green2.jpg --bg-fill /home/robin/Bilder/Wallpaper/megumin.jpg
 
 #screen timeout
 exec_always --no-startup-id xset s off off

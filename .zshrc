@@ -70,5 +70,5 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias music='ncmpcpp'
-alias setscreen='xrandr --output HDMI-1 --set "Broadcast RGB" "Full" --output HDMI-2 --auto --right-of HDMI-1'
+alias setscreen='xrandr --output HDMI2 --set "Broadcast RGB" "Full" --output HDMI2 --auto --right-of HDMI1'
 source .zshrc_priv

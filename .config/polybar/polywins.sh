@@ -72,7 +72,6 @@ move_window() {
 	EOF
 	wmctrl -ia "$1"
 	i3-msg move window to output right
-	#wmctrl -ir "$1" -e "0,$x,$y,$w,$h"
 }
 
 # --- }}}
@@ -157,7 +156,26 @@ generate_window_list() {
 			"window_classname") w_name="$cname" ;;
 			"window_title") w_name="$title" ;;
 		esac
-		
+	
+
+		#replace name with symbol
+		case "$w_name" in
+			"Chromium") w_name="" ;;
+			"firefox") w_name="" ;;
+			"Lxterminal") w_name="" ;;
+			"Nemo") w_name="" ;;
+			"TelegramDesktop") w_name="" ;;
+			"Nextcloud") w_name="" ;;
+			"KeepassXC") w_name="" ;;
+			"Pavucontrol") w_name="" ;;
+			"cantata") w_name="" ;;
+			"Gimp") w_name="" ;;
+			"Nemo") w_name="" ;;
+			"Virt-manager") w_name="" ;;
+			*) w_name="" ;;
+		esac
+
+	
 		# Use user-selected character case
 		case "$char_case" in
 			"lower") w_name=$(
@@ -175,7 +193,7 @@ generate_window_list() {
 
 		# Apply add-spaces setting
 		if [ "$add_spaces" = "true" ]; then
-			w_name=" $w_name "
+			w_name="  $w_name  "
 		fi
 
 		# Add left and right formatting to displayed name
