@@ -238,8 +238,11 @@ bindsym XF86AudioRaiseVolume exec "sh -c 'pactl set-sink-mute 0 false ; pactl se
 #Compton
 exec_always --no-startup-id picom --experimental-backends -b
 
+#ALSA Disable Auto-Mute
+exec --no-startup-id amixer -c 0 sset "Auto-Mute Mode" Disabled
+
 #Polybar Panel
-exec_always --no-startup-id $HOME/.config/polybar/start.sh
+exec --no-startup-id $HOME/.config/polybar/start.sh
 
 #Telegram
 exec --no-startup-id telegram-desktop -startintray
@@ -261,10 +264,3 @@ exec_always --no-startup-id sleep 3 && feh --bg-fill /home/robin/Bilder/Wallpape
 
 #screen timeout
 exec_always --no-startup-id xset s off off
-
-#openrazer
-#exec_always --no-startup-id 'echo -n -e "\x20\x02\x00" > $(find -L /sys/bus/hid/drivers/razerkbd/0003:1532* -maxdepth 1 -name "matrix_effect_static")'
-
-#conky
-#exec --no-startup-id conky
-

@@ -168,10 +168,11 @@ generate_window_list() {
 			"Nextcloud") w_name="" ;;
 			"KeepassXC") w_name="" ;;
 			"Pavucontrol") w_name="" ;;
-			"cantata") w_name="" ;;
 			"Gimp") w_name="" ;;
 			"Nemo") w_name="" ;;
 			"Virt-manager") w_name="" ;;
+			"Spotify") w_name="" ;;
+			"remmina") w_name="" ;;
 			*) w_name="" ;;
 		esac
 

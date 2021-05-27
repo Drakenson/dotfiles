@@ -94,7 +94,7 @@ font-2 = "Font Awesome 5 Brands:fontformat=truetype:size=10:antialias=true;2"
 
 modules-left = i3 polywins
 modules-center = mpd
-modules-right = pulseaudio lights hikari powermenu date
+modules-right = pulseaudio switchsink lights hikari powermenu date
 
 tray-position = none
 cursor-click = pointer
@@ -213,6 +213,8 @@ menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
 menu-0-1 = power off
 menu-0-1-exec = menu-open-2
+menu-0-2 = suspend
+menu-0-2-exec = menu-open-3
 
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
@@ -224,6 +226,11 @@ menu-2-0-exec = systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
+menu-3-0 = suspend
+menu-3-0-exec = systemctl suspend
+menu-3-1 = cancel
+menu-3-1-exec = menu-open-0
+
 [module/lights]
 type = custom/text
 content = 
@@ -234,6 +241,26 @@ type = custom/text
 content = 
 click-left = attachhikari
 
+[module/firefox]
+type = custom/text
+content = ""
+click-left = firefox
+
+[module/nemo]
+type = custom/text
+content = ""
+click-left = nemo
+
+[module/lxterminal]
+type = custom/text
+content = ""
+click-left = lxterminal
+
+[module/switchsink]
+type = custom/text
+content = ""
+click-left = ~/.config/polybar/pulse_script.sh
+
 [module/polywins]
 type = custom/script
 exec = ~/.config/polybar/polywins.sh 2>/dev/null
@@ -241,6 +268,10 @@ format = <label>
 label = %output%
 label-padding = 1
 tail = true
+
+[module/blank]
+type = custom/text
+content = " "
 
 [settings]
 screenchange-reload = true

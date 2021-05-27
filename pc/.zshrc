@@ -54,10 +54,10 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 fi
 
 #Green
-PROMPT='%B%(!.%F{196}.%F{#afd700})%n@%m:%f%F{39}%~%b%f%(!.#.$) '
+#PROMPT='%B%(!.%F{196}.%F{#afd700})%n@%m:%f%F{39}%~%b%f%(!.#.$) '
 
-#Orange
-#PROMPT='%B%(!.%F{196}.%F{#974300})%n@%m:%f%F{39}%~%b%f%(!.#.$) '
+#GruvBox
+PROMPT='%B%(!.%F{196}.%F{#b8bb26})%n@%m:%f%F{#83a598}%~%b%f%(!.#.$) '
 
 HISTFILE=~/.zhistory
 setopt INC_APPEND_HISTORY
@@ -71,4 +71,6 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias music='ncmpcpp'
 alias setscreen='xrandr --output HDMI2 --set "Broadcast RGB" "Full" --output HDMI2 --auto --right-of HDMI1'
-source .zshrc_priv
+alias setrazer='echo -n -e "\x20\x02\x00" > $(find -L /sys/bus/hid/drivers/razerkbd/0003:1532* -maxdepth 1 -name "matrix_effect_static")'
+source ~/.zshrc_priv
+
