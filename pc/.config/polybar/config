@@ -108,22 +108,22 @@ type = internal/i3
 enable-click = true
 enable-scroll = false
 
-label-focused = %index%
+label-focused = %name%
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background-active}
 label-focused-padding = 2
 
-label-urgent = %index%
+label-urgent = %name%
 label-urgent-padding = 2
 label-urgent-foreground = ${colors.foreground}
 label-urgent-background = ${colors.background-inactive}
 
-label-visible = %index%
+label-visible = %name%
 label-visible-padding = 2
 label-visible-foreground = ${colors.foreground}
 label-visible-background = ${colors.background-middle}
 
-label-unfocused = %index%
+label-unfocused = %name%
 label-unfocused-padding = 2
 label-unfocused-foreground = ${colors.foreground}
 label-unfocused-background = ${colors.background-inactive}

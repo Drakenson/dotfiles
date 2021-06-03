@@ -72,5 +72,8 @@ alias ll='ls -l'
 alias music='ncmpcpp'
 alias setscreen='xrandr --output HDMI2 --set "Broadcast RGB" "Full" --output HDMI2 --auto --right-of HDMI1'
 alias setrazer='echo -n -e "\x20\x02\x00" > $(find -L /sys/bus/hid/drivers/razerkbd/0003:1532* -maxdepth 1 -name "matrix_effect_static")'
+alias setmonhdmi='ddccontrol -r 0x60 -w 17 dev:/dev/i2c-1'
+alias setmondp='ddccontrol -r 0x60 -w 15 dev:/dev/i2c-1'
+
 source ~/.zshrc_priv
 

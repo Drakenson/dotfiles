@@ -162,7 +162,7 @@ generate_window_list() {
 		case "$w_name" in
 			"Chromium") w_name="" ;;
 			"firefox") w_name="" ;;
-			"Lxterminal") w_name="" ;;
+			"Alacritty") w_name="" ;;
 			"Nemo") w_name="" ;;
 			"TelegramDesktop") w_name="" ;;
 			"Nextcloud") w_name="" ;;
