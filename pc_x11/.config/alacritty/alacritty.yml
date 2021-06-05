@@ -13,7 +13,7 @@ font:
     style: Bold Italic Extended
   size: 10
 
-background_opacity: 0.7
+#background_opacity: 0.7
 
 # Colors (Gruvbox dark)
 colors:
