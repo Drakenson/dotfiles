@@ -9,7 +9,7 @@
 		"max-length": 50
 	},
 	"wlr/taskbar": {
-		"format": "{icon}",
+		"format": "{app_id:.3}",
 		"icon-size": 14,
 		"icon-theme": "Yaru-MATE",
 		"tooltip-format": "{title}",
@@ -22,13 +22,10 @@
 		"all-outputs": true
 	},
 	"mpd": {
-		"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} {artist} - {title} ({elapsedTime:%M:%S} / {totalTime:%M:%S})",
+		"format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon} {artist} - {title} ({elapsedTime:%M:%S} / {totalTime:%M:%S})",
 		"format-disconnected": "Disconnected",
 		"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped",
 		"interval": 10,
-		"consume-icons": {
-			"on": " " // Icon shows only when "consume" is on
-		},
 		"random-icons": {
 			"on": " "
 		},
@@ -42,7 +39,12 @@
 			"paused": "",
 			"playing": ""
 		},
-		"on-click-right": "music_single"
+		"on-click": "mpc toggle",
+		"on-click-middle": "mpc next",
+		"on-click-right": "music_single",
+		"on-scroll-up": "mpc volume +2",
+		"on-scroll-down": "mpc volume -2",
+		"tooltip": false,
 	},
 	"clock": {
 		"format-alt": "{:%d.%m.%Y KW%U}"
