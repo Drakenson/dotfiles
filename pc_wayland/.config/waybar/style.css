@@ -1,0 +1,75 @@
+* {
+border: none;
+border-radius: 0;
+font-family: "Iosevka Medium Extended";
+font-size: 10pt;
+color: #ffffff;
+}
+
+window#waybar {
+background: alpha(@theme_base_color,0.7);
+color: @theme_text_color;
+}
+
+#workspaces {
+    margin-left: 0;
+	margin-right: 10px;
+}
+
+#workspaces button, #taskbar button {
+    padding: 0 10px;
+    background-color: #4a583f;
+}
+
+#workspaces button:hover, #taskbar button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused, #taskbar button.active {
+    background-color: #929d5c;
+}
+
+#tray {
+	padding: 0 5px;
+	margin: 0 5px;
+}
+
+#clock {
+	margin-left: 4px;
+	margin-right: 10px;
+}
+
+
+#custom-lights, #custom-hikari, #custom-shutdown {
+	margin: 0;
+	padding: 0;
+}
+
+#idle_inhibitor {
+	margin: 0;
+	margin-right: 5px;
+	padding: 0;
+}
+
+#memory,
+#pulseaudio,
+#taskbar,
+#mpd {
+	margin: 0 5px;
+    padding: 0 5px;
+}
+
+window#waybar,
+#workspaces,
+#taskbar,
+#tray,
+#clock,
+#pulseaudio,
+#memory,
+#custom-lights,
+#custom-hikari,
+#custom-shutdown,
+#idle_inhibitor,
+#mpd {
+border-bottom: 3px solid #929d5c;
+}

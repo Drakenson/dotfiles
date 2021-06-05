@@ -1,0 +1,32 @@
+
+/* https://cloudninja.pw/docs/wofi.html */
+window {
+    border: 2px solid #929d5c;
+    background-color: #1e1e1e;
+	font-family: "Iosevka Medium Extended";
+	font-size: 10pt; 
+}
+
+#input {
+    border: 2px solid #555555;
+	border-radius: 0;
+    background-color: #1e1e1e; 
+}
+
+#outer-box {
+    margin: 10px;
+}
+
+#scroll {
+    margin: 5px 0px;
+	color: #f2f2f2;
+}
+
+#scroll label {
+    margin: 2px 0px;
+}
+
+#entry:selected {
+	border: none;
+	background-color: #929d5c;
+}
