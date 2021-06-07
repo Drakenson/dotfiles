@@ -16,8 +16,8 @@ input 5426:515:Razer_Razer_BlackWidow_Chroma {
 }
 
 #Display
-output HDMI-A-1 pos 0 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/megu_2.png fill
-output HDMI-A-2 pos 1920 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/megu_1.png fill
+output HDMI-A-1 pos 0 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_apple.png fill
+output HDMI-A-2 pos 1920 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_apple.png fill
 
 
 #Variables
@@ -121,16 +121,16 @@ set $ws0 "10"
 
 
 #bind workspaces to screens
-workspace $ws1 output HDMI1
-workspace $ws2 output HDMI2
-workspace $ws3 output HDMI1
-workspace $ws4 output HDMI2
-workspace $ws5 output HDMI1
-workspace $ws6 output HDMI2
-workspace $ws7 output HDMI1
-workspace $ws8 output HDMI2
-workspace $ws9 output HDMI1
-workspace $ws0 output HDMI2
+workspace $ws1 output HDMI-A-1
+workspace $ws2 output HDMI-A-2
+workspace $ws3 output HDMI-A-1
+workspace $ws4 output HDMI-A-2
+workspace $ws5 output HDMI-A-1
+workspace $ws6 output HDMI-A-2
+workspace $ws7 output HDMI-A-1
+workspace $ws8 output HDMI-A-2
+workspace $ws9 output HDMI-A-1
+workspace $ws0 output HDMI-A-2
 
 # switch to workspace
 bindsym $win+1 workspace $ws1
@@ -156,8 +156,7 @@ bindsym $win+Shift+8 move container to workspace $ws8
 bindsym $win+Shift+9 move container to workspace $ws9
 bindsym $win+Shift+0 move container to workspace $ws0
 
-bindsym $win+Shift+c reload
-bindsym $win+Shift+r restart
+bindsym $win+Shift+r reload
 bindsym $win+Shift+e exec "swaynag -f 'pango:Ubuntu 10' -t warning -m 'Do you really want to exit sway?' -B 'Yes' 'swaymsg exit'"
 
 bindsym $win+Shift+s exec --no-startup-id 'grim -g "$(slurp)" - | wl-copy'
@@ -182,9 +181,3 @@ exec --no-startup-id nextcloud
 
 #Redshift
 exec --no-startup-id gammastep-indicator
-
-#nm-applet
-exec --no-startup-id nm-applet
-
-#screen timeout
-exec_always --no-startup-id xset s off off

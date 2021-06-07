@@ -2,4 +2,6 @@ lines=5
 location=top
 yoffset=75
 xoffset=0
+width=700
 mode=run
+term=alacritty

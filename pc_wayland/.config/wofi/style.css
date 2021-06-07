@@ -6,15 +6,21 @@ window {
 	font-family: "Iosevka Medium Extended";
 	font-size: 10pt; 
 }
-
+ 
 #input {
-    border: 2px solid #555555;
+	border: none;
+	margin: 0;
 	border-radius: 0;
     background-color: #1e1e1e; 
 }
 
 #outer-box {
-    margin: 10px;
+    margin: 15px;
+}
+
+#inner-box {
+	margin: 0;
+	border: none;
 }
 
 #scroll {
@@ -23,10 +29,15 @@ window {
 }
 
 #scroll label {
-    margin: 2px 0px;
+    margin: 0;
+}
+
+#text:selected {
+	color: #1e1e1e;
 }
 
 #entry:selected {
 	border: none;
 	background-color: #929d5c;
+	outline: none;
 }

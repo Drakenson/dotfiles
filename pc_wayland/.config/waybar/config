@@ -77,7 +77,8 @@
 		"format": "  ",
 		"max-length": 4,
 		"on-click": "swaynag -f 'pango:Ubuntu 10' -t warning -m 'System wirklich herunterfahren?' -B 'Herunterfahren' 'systemctl poweroff'",
-		"on-click-right": "swaynag -f 'pango:Ubuntu 10' -t warning -m 'System wirklich neustarten?' -B 'Neustarten' 'systemctl reboot'"
+		"on-click-right": "swaynag -f 'pango:Ubuntu 10' -t warning -m 'System wirklich neustarten?' -B 'Neustarten' 'systemctl reboot'",
+		"on-click-middle": "swaynag -f 'pango:Ubuntu 10' -t warning -m 'System in Standby versetzen?' -B 'Standby' 'systemctl suspend'"
 	},
 	"custom/hikari": {
 		"format": "  ",
