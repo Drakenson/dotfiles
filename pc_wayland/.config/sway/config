@@ -16,15 +16,14 @@ input 5426:515:Razer_Razer_BlackWidow_Chroma {
 }
 
 #Display
-output HDMI-A-1 pos 0 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_apple.png fill
-output HDMI-A-2 pos 1920 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_apple.png fill
+output HDMI-A-1 pos 0 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_tori_1.png fill
+output HDMI-A-2 pos 1920 0 res 1920x1080@60Hz bg /home/robin/Bilder/Wallpaper/milim_tori_2.png fill
 
 
 #Variables
 
-#Green
-set $ActiveBorderColor #929d5c
-set $InactiveBorderColor #4a583f
+set $ActiveBorderColor #04239b
+set $InactiveBorderColor #001566
 
 set $win Mod4
 set $alt Mod1

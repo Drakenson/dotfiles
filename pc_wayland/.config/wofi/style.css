@@ -1,7 +1,6 @@
-
 /* https://cloudninja.pw/docs/wofi.html */
 window {
-    border: 2px solid #929d5c;
+    border: 2px solid #04239b;
     background-color: #1e1e1e;
 	font-family: "Iosevka Medium Extended";
 	font-size: 10pt; 
@@ -33,11 +32,11 @@ window {
 }
 
 #text:selected {
-	color: #1e1e1e;
+	color: #f2f2f2;
 }
 
 #entry:selected {
 	border: none;
-	background-color: #929d5c;
+	background-color: #04239b;
 	outline: none;
 }

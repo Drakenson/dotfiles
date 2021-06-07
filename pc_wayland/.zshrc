@@ -54,10 +54,10 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 fi
 
 #Green
-#PROMPT='%B%(!.%F{196}.%F{#afd700})%n@%m:%f%F{39}%~%b%f%(!.#.$) '
+PROMPT='%B%(!.%F{196}.%F{#afd700})%n@%m:%f%F{39}%~%b%f%(!.#.$) '
 
 #GruvBox
-PROMPT='%B%(!.%F{196}.%F{#b8bb26})%n@%m:%f%F{#83a598}%~%b%f%(!.#.$) '
+#PROMPT='%B%(!.%F{196}.%F{#b8bb26})%n@%m:%f%F{#83a598}%~%b%f%(!.#.$) '
 
 HISTFILE=~/.zhistory
 setopt INC_APPEND_HISTORY
